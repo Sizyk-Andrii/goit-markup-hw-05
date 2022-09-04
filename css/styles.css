@@ -628,6 +628,11 @@ address {
   z-index: 101;
 }
 
+.is-hidden {
+  transition: opacit 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
