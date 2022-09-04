@@ -36,6 +36,7 @@
   --primary-letter-spacing: 0.03em;
   --secondary-letter-spacing: 0.02em;
   --primary-text-align: center;
+  --primary-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 header {
@@ -151,7 +152,7 @@ address {
   color: var(--main-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--primary-timing-function);
 }
 
 .portfolio-btn-list {
@@ -218,7 +219,7 @@ address {
   fill: currentColor;
   display: flex;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--primary-timing-function);
 }
 
 .menu-contacts-navigation-icon {
@@ -243,12 +244,12 @@ address {
 
 .location {
   color: var(--bg-color1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--primary-timing-function);
 }
 
 .menu-contacts-footer {
   color: var(--menu-contacts-footer-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--primary-timing-function);
 }
 
 .footer-gap {
@@ -267,7 +268,6 @@ address {
   line-height: var(--primary-line-height);
   text-transform: uppercase;
   color: var(--bg-color1);
-  /* margin-top: 12px; */
 }
 
 .social-link-footer {
@@ -278,8 +278,8 @@ address {
   height: 44px;
   border-radius: 50%;
   background-color: var(--social-link_footer-background-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--primary-timing-function),
+  transition: fill 250ms var(--primary-timing-function);
 }
 
 .social-link-footer:hover,
@@ -335,7 +335,7 @@ address {
   margin: 0 auto;
   display: block;
   padding: 10px 32px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--primary-timing-function);
 }
 
 .top-main-index-button:hover,
@@ -379,7 +379,7 @@ address {
   line-height: var(--primary-line-height);
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
 }
 
 .our-virtues-desc {
@@ -427,15 +427,14 @@ address {
   padding-top: 27px;
   padding-bottom: 27px;
   background-color: rgba(47, 48, 58, 0.8);;
-  font-family: 'Roboto';
+  font-family: var(--primary-font);
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
+  font-weight: var(--primary-font-weight);
+  line-height: var(--primary-line-height);
+  text-align: var(--primary-text-align);
+  letter-spacing: var(--primary-letter-spacing);
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--bg-color1);
 } 
 
 .examples_work,
@@ -466,8 +465,8 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--primary-timing-function),
+  transition: fill 250ms var(--primary-timing-function);
 }
 
 .social-link:hover,
@@ -491,8 +490,8 @@ address {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   fill: var(--icon-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--primary-timing-function),
+  transition: fill 250ms var(--primary-timing-function);
 }
 
 .client-link:focus,
@@ -512,7 +511,7 @@ address {
 .portfolio-card-link {
   display: block;
   color: var(--main-text-color);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--primary-timing-function);
 }
 
 .portfolio-card-link:hover {
@@ -534,15 +533,15 @@ address {
   width: 100%;
   padding: 63px 24px;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #2196F3;
-  font-family: 'Roboto';
+  transition: transform 250ms var(--primary-timing-function);
+  background-color: var(--accent-color);
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
+  line-height: 1.55;
+  letter-spacing: var(--primary-letter-spacing);
+  color: var(--bg-color1);
 }
 
 .portfolio-list-projects-container:hover .overlay {
@@ -558,9 +557,9 @@ address {
   background: var(--third-bg-color);
   border-radius: 4px;
   padding: 6px 22px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--primary-timing-function),
+  transition: background-color 250ms var(--primary-timing-function),
+  transition: box-shadow 250ms var(--primary-timing-function);
 }
 
 .button-text:hover,
@@ -624,26 +623,12 @@ address {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--shadow-secondary-color);
   z-index: 101;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--primary-timing-function),
+   visibility 250ms var(--primary-timing-function);
 
 }
-
-/* .is-hidden {
-  transition: opacit 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  animation: hidden 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@keyframes hidden {
-  0% {
-    transform: scale(0);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-} */
 
 .backdrop.is-hidden {
   visibility: hidden;
@@ -658,11 +643,13 @@ address {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: var(--bg-color1);
+  box-shadow: 0px 1px 3px var(--button-text-shadow-third-color),
+    0px 1px 1px var(--shadow-primary-color),
+    0px 2px 1px var(--shadow-secondary-color);
   border-radius: 4px;
-
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--primary-timing-function), 
+  opacity 250ms var(--primary-timing-function);
 
 }
 
@@ -677,6 +664,6 @@ address {
   height: 30px;
   border-radius: 50%;
   padding: 0;
-  background-color: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-color1);
+  border: 1px solid var(--button-text-shadow-primary-color);
 }
