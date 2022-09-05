@@ -278,8 +278,7 @@ address {
   height: 44px;
   border-radius: 50%;
   background-color: var(--social-link_footer-background-color);
-  transition: background-color 250ms var(--primary-timing-function),
-  transition: fill 250ms var(--primary-timing-function);
+  transition: background-color 250ms var(--primary-timing-function), fill 250ms var(--primary-timing-function);
 }
 
 .social-link-footer:hover,
@@ -465,8 +464,7 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 250ms var(--primary-timing-function),
-  transition: fill 250ms var(--primary-timing-function);
+  transition: background-color 250ms var(--primary-timing-function), fill 250ms var(--primary-timing-function);
 }
 
 .social-link:hover,
@@ -490,8 +488,7 @@ address {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   fill: var(--icon-color);
-  transition: border-color 250ms var(--primary-timing-function),
-  transition: fill 250ms var(--primary-timing-function);
+  transition: border-color 250ms var(--primary-timing-function), fill 250ms var(--primary-timing-function);
 }
 
 .client-link:focus,
@@ -557,9 +554,7 @@ address {
   background: var(--third-bg-color);
   border-radius: 4px;
   padding: 6px 22px;
-  transition: color 250ms var(--primary-timing-function),
-  transition: background-color 250ms var(--primary-timing-function),
-  transition: box-shadow 250ms var(--primary-timing-function);
+  transition: color 250ms var(--primary-timing-function), background-color 250ms var(--primary-timing-function), box-shadow 250ms var(--primary-timing-function);
 }
 
 .button-text:hover,
