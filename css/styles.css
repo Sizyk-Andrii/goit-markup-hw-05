@@ -3,7 +3,7 @@
 :root {
   --accent-color: #2196f3;
   --bg-color1: #ffffff;
-  --hero-bg-color:#c4c4c4;
+  --hero-bg-color: #c4c4c4;
   --main-text-color: #212121;
   --secondary-bg-color: #2f303a;
   --third-bg-color: #f5f4fa;
@@ -22,7 +22,7 @@
   --shadow-primary-color: rgba(0, 0, 0, 0.14);
   --shadow-secondary-color: rgba(0, 0, 0, 0.2);
   --shadow-third-color: rgba(0, 0, 0, 0.16);
-  --shadow-fourth-color:rgba(0, 0, 0, 0.06);
+  --shadow-fourth-color: rgba(0, 0, 0, 0.06);
   --border-color: #eeeeee;
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -36,7 +36,7 @@
   --primary-letter-spacing: 0.03em;
   --secondary-letter-spacing: 0.02em;
   --primary-text-align: center;
-  --primary-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+  --primary-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 header {
@@ -110,12 +110,11 @@ address {
   position: relative;
 }
 
-
 .current::after {
   position: absolute;
   bottom: -1px;
   left: 0;
-  content: '';
+  content: "";
   display: block;
   background-color: var(--accent-color);
   width: 100%;
@@ -278,7 +277,8 @@ address {
   height: 44px;
   border-radius: 50%;
   background-color: var(--social-link_footer-background-color);
-  transition: background-color 250ms var(--primary-timing-function), fill 250ms var(--primary-timing-function);
+  transition: background-color 250ms var(--primary-timing-function),
+    fill 250ms var(--primary-timing-function);
 }
 
 .social-link-footer:hover,
@@ -299,8 +299,8 @@ address {
 
 .top-main-index-bg {
   background-image: linear-gradient(
-    var(--gradient-color),
-    var(--gradient-color)
+      var(--gradient-color),
+      var(--gradient-color)
     ),
     url("../images/hero-bg-Img.jpg");
   background-position: center;
@@ -310,7 +310,6 @@ address {
   padding-bottom: 200px;
   max-width: 1600px;
   margin: 0 auto;
-
 }
 
 .page-footer-bg {
@@ -425,7 +424,7 @@ address {
   height: 70px;
   padding-top: 27px;
   padding-bottom: 27px;
-  background-color: rgba(47, 48, 58, 0.8);;
+  background-color: rgba(47, 48, 58, 0.8);
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: var(--primary-font-weight);
@@ -434,7 +433,7 @@ address {
   letter-spacing: var(--primary-letter-spacing);
   text-transform: uppercase;
   color: var(--bg-color1);
-} 
+}
 
 .examples_work,
 .our-team-list,
@@ -464,7 +463,8 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 250ms var(--primary-timing-function), fill 250ms var(--primary-timing-function);
+  transition: background-color 250ms var(--primary-timing-function),
+    fill 250ms var(--primary-timing-function);
 }
 
 .social-link:hover,
@@ -488,7 +488,8 @@ address {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   fill: var(--icon-color);
-  transition: border-color 250ms var(--primary-timing-function), fill 250ms var(--primary-timing-function);
+  transition: border-color 250ms var(--primary-timing-function),
+    fill 250ms var(--primary-timing-function);
 }
 
 .client-link:focus,
@@ -512,13 +513,13 @@ address {
 }
 
 .portfolio-card-link:hover {
-  box-shadow: 0px 1px 1px var(--button-text-shadow-third-color), 
+  box-shadow: 0px 1px 1px var(--button-text-shadow-third-color),
     0px 4px 4px var(--shadow-fourth-color),
     1px 4px 6px var(--shadow-third-color);
 }
 
 .portfolio-wrapper {
-  position: relative; 
+  position: relative;
   overflow: hidden;
 }
 
@@ -554,7 +555,9 @@ address {
   background: var(--third-bg-color);
   border-radius: 4px;
   padding: 6px 22px;
-  transition: color 250ms var(--primary-timing-function), background-color 250ms var(--primary-timing-function), box-shadow 250ms var(--primary-timing-function);
+  transition: color 250ms var(--primary-timing-function),
+    background-color 250ms var(--primary-timing-function),
+    box-shadow 250ms var(--primary-timing-function);
 }
 
 .button-text:hover,
@@ -621,8 +624,7 @@ address {
   background-color: var(--shadow-secondary-color);
   z-index: 101;
   transition: opacity 250ms var(--primary-timing-function),
-   visibility 250ms var(--primary-timing-function);
-
+    visibility 250ms var(--primary-timing-function);
 }
 
 .backdrop.is-hidden {
@@ -643,9 +645,8 @@ address {
     0px 1px 1px var(--shadow-primary-color),
     0px 2px 1px var(--shadow-secondary-color);
   border-radius: 4px;
-  transition: transform 250ms var(--primary-timing-function), 
-  opacity 250ms var(--primary-timing-function);
-
+  transition: transform 250ms var(--primary-timing-function),
+    opacity 250ms var(--primary-timing-function);
 }
 
 .modal-window-close-btn {
