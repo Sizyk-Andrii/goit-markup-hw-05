@@ -422,8 +422,9 @@ address {
   bottom: 0;
   width: 100%;
   height: 70px;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(47, 48, 58, 0.8);
   font-family: var(--primary-font);
   font-style: normal;
@@ -530,7 +531,7 @@ address {
   height: 100%;
   width: 100%;
   padding: 63px 24px;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms var(--primary-timing-function);
   background-color: var(--accent-color);
   font-family: var(--primary-font);
@@ -647,6 +648,7 @@ address {
   border-radius: 4px;
   transition: transform 250ms var(--primary-timing-function),
     opacity 250ms var(--primary-timing-function);
+    animation: size-in 10000ms linear;
 }
 
 .modal-window-close-btn {
